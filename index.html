@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Quantico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div id="categories">
+            <nav class="navbar">
+                <div class="title">
+                    <img class="logo" src="./img/img_1.png" alt="logo">
+                    <h1>Todo App</h1>
+                </div>
+                <!-- <p class="dateTime"><span id="dateTime"></span></p> -->
+            </nav>
+            <div class="addCategory">
+                <input type="text" id="categoryInput" class="input">
+                <button class="btn" id="categoryBtn" onclick="category()">Add Category</button>
+            </div>
+        </div>
+
+
+        <div id="tasks">
+            <div class="addTask">
+                <input type="text" id="taskInput" class="input">
+                <button class="btn" id="taskBtn" onclick="task()">Add Task</button>
+            </div>
+            <div id="taskSection"></div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

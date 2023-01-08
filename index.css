@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Quantico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    background: url(./img/beach-landscape-morning-scenery-illustration-macos-big-sur-6016x6016-3792.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    margin: 0 10px;
+}
+
+.logo {
+    width: 12%;
+    border-radius: 25%;
+    margin: 0 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ---------- MAIN ---------- */
+
+.main {
+    display: flex;
+    height: 800px;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.75);
+}
+
+
+#categories {
+    background-color: #9BAEAA;
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#categories::-webkit-scrollbar{
+    display: none;
+}
+.addCategory {
+    margin: 10px 0 60px 10px;
+}
+#categoryInput {
+    width: 65%;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    outline: none;
+}
+#categoryBtn {
+    width: 25%;
+    font-size: 14px;
+    padding: 6px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px 0 10px;
+}
+.heading {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
+}
+.remove {
+    display: flex;
+}
+.delCategory {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all linear .3s;
+}
+.delCategory:hover{
+    color: #FE2D30;
+    border-bottom: 1px solid #FE2D30;
+}
+
+
+#tasks {
+    background-color: white;
+    width: 70%;
+    border-radius: 0 10px 10px 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#tasks::-webkit-scrollbar{
+    display: none;
+}
+
+.addTask {
+    margin: 0 50px;
+    margin: 30px 0 60px 60px;
+}
+
+#taskInput {
+    width: 60%;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    outline: none;
+}
+
+#taskBtn {
+    width: 10%;
+    font-size: 14px;
+    padding: 6px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.task {
+    font-family: 'Quantico', sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 60px;
+}
+
+.taskHeading {
+    font-size: 18px;
+}
+
+.delTask {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: color linear .3s;
+}
+.delTask:hover{
+    color: #FE2D30;
+}
+
+
+.display {
+    display: none;
+}
