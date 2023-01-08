@@ -1,7 +1,3 @@
-// dateTime = document.getElementById("dateTime")
-// var currentDate = new Date()
-// dateTime.textContent = currentDate.toDateString();
-
 categoryInput = document.getElementById("categoryInput")
 deleteCategory = document.getElementsByClassName("delCategory")
 categories = document.getElementById("categories")
